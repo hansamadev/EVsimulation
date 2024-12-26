@@ -4,9 +4,8 @@
 
 # **Elektrikli Araç Simülasyon Projesi**
 
-Bu proje, elektrikli bir aracın farklı yol koşullarında performansını simüle ederek enerji tüketimi, batarya durumu, motor gücü ve sıcaklık gibi kritik parametreleri analiz etmeyi amaçlar. Proje, mühendislik analizleri, eğitim ve araştırma çalışmaları için güçlü bir araç sunar.
+Bu proje, elektrikli bir aracın farklı yol koşullarında performansını simüle ederek enerji tüketimi, batarya durumu, motor gücü ve sıcaklık gibi kritik parametreleri analiz etmeyi amaçlar. Proje, mühendislik analizleri, eğitim ve araştırma çalışmaları için güçlü bir araç sunar.**Kod geliştirilmeye açık bir şekilde yazıldı. Farklı parametreler eklenerek detaylandırlabilir.**
 
-Kod geliştirilmeye açık bir şekilde yazıldı. Farklı parametreler eklenerek detaylandırlabilir.
 ---
 
 ## **Kullanım Amacı**
