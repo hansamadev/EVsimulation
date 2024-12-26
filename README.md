@@ -43,7 +43,6 @@ Bu proje:
 
 - **config.json:** Simülasyon parametrelerini içeren bir yapılandırma dosyası.
 - **main.py:** Simülasyonu gerçekleştiren ana Python dosyası.
-- **simulasyon_sonuclari.csv:** Simülasyon çıktılarının kaydedildiği dosya.
 - **README.md:** Projenin açıklama ve kullanım kılavuzu.
 
 ---
