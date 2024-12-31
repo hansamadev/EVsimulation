@@ -1,60 +1,60 @@
 
-# **🚗 Elektrikli Araç Simülasyon Projesi ⚡**
+# **🚗 Electric Vehicle Simulation Project ⚡**
 
-Bu proje, elektrikli bir aracın farklı yol koşullarında performansını simüle ederek enerji tüketimi, batarya durumu, motor gücü ve sıcaklık gibi kritik parametreleri analiz etmeyi amaçlar. Proje, mühendislik analizleri, eğitim ve araştırma çalışmaları için güçlü bir araç sunar. **Kod geliştirilmeye açık bir şekilde yazıldı. Farklı parametreler eklenerek detaylandırılabilir.**
-
----
-
-## **🎯 Kullanım Amacı**
-
-Bu proje ile:
-
-- ⚡ Elektrikli araçların enerji tüketim dinamiklerini anlamayı sağlar.
-- 🛣️ Farklı yol segmentlerinde aracın hız, güç ve sıcaklık gibi performans verilerini analiz eder.
-- 🚗 Motor ve batarya performansını gerçek dünya koşullarına uygun şekilde simüle eder.
-- 🧑‍🏫 Araç tasarımı, optimizasyon ve enerji yönetimi stratejilerinin geliştirilmesine yardımcı olur.
+This project aims to simulate the performance of an electric vehicle under different road conditions, analyzing critical parameters such as energy consumption, battery status, motor power, and temperature. The project provides a powerful tool for engineering analyses, training, and research studies. **The code is written in an open and expandable manner. Additional parameters can be added for further detailing.**
 
 ---
 
-## **🔧 Projenin Yaptıkları**
+## **🎯 Purpose**
 
-1. **🛤️ Yol Segmentlerine Dayalı Simülasyon:**
-   - Farklı eğim ve yüzey koşullarına sahip yol segmentlerinde aracın davranışını simüle eder.
+With this project, you can:
 
-2. **🔋 Rejeneratif Frenleme:**
-   - Negatif çekiş kuvveti durumunda bataryaya enerji geri kazanımını hesaplar.
-
-3. **🌡️ Termal Yönetim:**
-   - Motor ve bataryanın sıcaklık artışını ve soğuma etkisini modeller.
-   - Aşırı sıcaklık durumunda gücü sınırlar.
-
-4. **⚙️ Motor Verim Haritası:**
-   - Motorun hız (RPM) ve tork değerlerine bağlı verimliliğini hesaplar.
-
-5. **📊 Sonuçların Görselleştirilmesi ve Kaydedilmesi:**
-   - Hız, pozisyon, batarya durumu, motor gücü ve sıcaklık gibi parametreleri grafiklerle görselleştirir.
-   - Simülasyon sonuçlarını CSV formatında kaydeder.
+- ⚡ Understand the energy consumption dynamics of electric vehicles.
+- 🛣️ Analyze performance data such as speed, power, and temperature on different road segments.
+- 🚗 Simulate motor and battery performance under real-world conditions.
+- 🧑‍🏫 Assist in the development of vehicle design, optimization, and energy management strategies.
 
 ---
 
-## **📁 Proje Dosya Yapısı**
+## **🔧 What the Project Does**
 
-- **config.json:** Simülasyon parametrelerini içeren bir yapılandırma dosyası.
-- **main.py:** Simülasyonu gerçekleştiren ana Python dosyası.
-- **README.md:** Projenin açıklama ve kullanım kılavuzu.
+1. **🛤️ Road Segment-Based Simulation:**
+   - Simulates the vehicle's behavior on road segments with varying slope and surface conditions.
+
+2. **🔋 Regenerative Braking:**
+   - Calculates energy recovery to the battery during negative traction force situations.
+
+3. **🌡️ Thermal Management:**
+   - Models the temperature increase and cooling effects of the motor and battery.
+   - Limits power during extreme temperature conditions.
+
+4. **⚙️ Motor Efficiency Map:**
+   - Calculates the motor's efficiency based on speed (RPM) and torque values.
+
+5. **📊 Visualization and Saving of Results:**
+   - Visualizes parameters such as speed, position, battery status, motor power, and temperature through graphs.
+   - Saves simulation results in CSV format.
 
 ---
 
-## **⚙️ Gerekli Kurulumlar**
+## **📁 Project File Structure**
 
-Proje için aşağıdaki Python kütüphaneleri gereklidir:
+- **config.json:** A configuration file containing simulation parameters.
+- **main.py:** The main Python file that performs the simulation.
+- **README.md:** The description and usage guide of the project.
+
+---
+
+## **⚙️ Required Installations**
+
+The following Python libraries are required for the project:
 - `numpy`
 - `matplotlib`
 - `scipy`
 - `json`
 - `csv`
 
-Kurulum için aşağıdaki komutu kullanabilirsiniz:
+To install, use the following command:
 
 ```bash
 pip install numpy matplotlib scipy
@@ -62,10 +62,10 @@ pip install numpy matplotlib scipy
 
 ---
 
-## **📚 Kullanım Adımları**
+## **📚 Usage Steps**
 
-### 1. **config.json Dosyasını Hazırlayın**
-Simülasyon parametrelerini içeren `config.json` dosyasını oluşturun veya düzenleyin. Örnek yapı:
+### 1. **Prepare the config.json File**
+Create or edit the `config.json` file containing the simulation parameters. Example structure:
 
 ```json
 {
@@ -92,78 +92,78 @@ Simülasyon parametrelerini içeren `config.json` dosyasını oluşturun veya d�
 }
 ```
 
-### 2. **Simülasyonu Çalıştırın**
-Ana Python dosyasını çalıştırarak simülasyonu başlatın:
+### 2. **Run the Simulation**
+Start the simulation by running the main Python file:
 
 ```bash
 python main.py
 ```
 
-### 3. **Sonuçları İnceleyin**
-Simülasyon tamamlandığında:
-- 📊 Grafikler aracılığıyla hız, batarya durumu, motor gücü ve sıcaklık verilerini analiz edin.
-- 📂 `simulasyon_sonuclari.csv` dosyasını kullanarak verileri dışa aktarın.
+### 3. **Examine the Results**
+Once the simulation is complete:
+- 📊 Analyze speed, battery status, motor power, and temperature data through graphs.
+- 📂 Export data using the `simulation_results.csv` file.
 
 ---
 
-## **📐 Giriş Parametreleri**
+## **📐 Input Parameters**
 
-### **Motor ve Araç Özellikleri**
+### **Motor and Vehicle Properties**
 
-| Parametre               | Açıklama                                         | Örnek Değer |
-|-------------------------|-------------------------------------------------|-------------|
-| `motor_power`           | Motorun maksimum gücü (Watt)                   | 250000      |
-| `max_torque`            | Motorun maksimum torku (Nm)                    | 400         |
-| `max_rpm`               | Motorun maksimum devri (RPM)                   | 7000        |
-| `battery_capacity`      | Batarya kapasitesi (kWh)                       | 80          |
-| `vehicle_mass`          | Araç kütlesi (kg)                              | 900         |
-| `aero_drag_coeff`       | Aerodinamik sürtünme katsayısı                 | 0.24        |
-| `frontal_area`          | Araç ön kesit alanı (m²)                       | 1.6         |
+| Parameter               | Description                                      | Example Value |
+|-------------------------|--------------------------------------------------|---------------|
+| `motor_power`           | Maximum motor power (Watt)                       | 250000        |
+| `max_torque`            | Maximum motor torque (Nm)                        | 400           |
+| `max_rpm`               | Maximum motor RPM                                | 7000          |
+| `battery_capacity`      | Battery capacity (kWh)                           | 80            |
+| `vehicle_mass`          | Vehicle mass (kg)                                | 900           |
+| `aero_drag_coeff`       | Aerodynamic drag coefficient                     | 0.24          |
+| `frontal_area`          | Vehicle frontal area (m²)                        | 1.6           |
 
-### **Çevre ve Yol Koşulları**
+### **Environmental and Road Conditions**
 
-| Parametre               | Açıklama                                         | Örnek Değer |
-|-------------------------|-------------------------------------------------|-------------|
-| `air_density`           | Hava yoğunluğu (kg/m³)                         | 1.2         |
-| `traction_coeff`        | Lastik yol tutuş katsayısı                     | 1.2         |
-| `ambient_temp`          | Çevre sıcaklığı (°C)                           | 25          |
+| Parameter               | Description                                      | Example Value |
+|-------------------------|--------------------------------------------------|---------------|
+| `air_density`           | Air density (kg/m³)                              | 1.2           |
+| `traction_coeff`        | Tire-road friction coefficient                   | 1.2           |
+| `ambient_temp`          | Ambient temperature (°C)                         | 25            |
 
-### **Termal Yönetim**
+### **Thermal Management**
 
-| Parametre               | Açıklama                                         | Örnek Değer |
-|-------------------------|-------------------------------------------------|-------------|
-| `initial_battery_temp`  | Batarya başlangıç sıcaklığı (°C)                | 25          |
-| `initial_motor_temp`    | Motor başlangıç sıcaklığı (°C)                  | 25          |
-| `max_battery_temp`      | Bataryanın maksimum sıcaklığı (°C)              | 60          |
-| `max_motor_temp`        | Motorun maksimum sıcaklığı (°C)                 | 100         |
+| Parameter               | Description                                      | Example Value |
+|-------------------------|--------------------------------------------------|---------------|
+| `initial_battery_temp`  | Initial battery temperature (°C)                 | 25            |
+| `initial_motor_temp`    | Initial motor temperature (°C)                   | 25            |
+| `max_battery_temp`      | Maximum battery temperature (°C)                 | 60            |
+| `max_motor_temp`        | Maximum motor temperature (°C)                   | 100           |
 
-### **Yol Segmentleri**
+### **Road Segments**
 
-| Parametre               | Açıklama                                         | Örnek Değer |
-|-------------------------|-------------------------------------------------|-------------|
-| `length`                | Yol segmentinin uzunluğu (m)                    | 500         |
-| `slope`                 | Yol segmentinin eğimi (%)                       | 5           |
-| `rolling_resistance`    | Yuvarlanma direnci katsayısı                    | 0.015       |
-
----
-
-## **📤 Çıkış Parametreleri**
-
-| Çıkış Parametresi       | Açıklama                                         |
-|-------------------------|-------------------------------------------------|
-| `time`                  | Simülasyon süresi (s)                           |
-| `velocity`              | Hız (km/h)                                      |
-| `position`              | Kat edilen mesafe (m)                           |
-| `soc`                   | Batarya doluluk oranı (%)                       |
-| `power`                 | Motor gücü (kW)                                 |
-| `torque`                | Tork (Nm)                                       |
-| `battery_temp`          | Batarya sıcaklığı (°C)                          |
-| `motor_temp`            | Motor sıcaklığı (°C)                            |
+| Parameter               | Description                                      | Example Value |
+|-------------------------|--------------------------------------------------|---------------|
+| `length`                | Length of the road segment (m)                   | 500           |
+| `slope`                 | Slope of the road segment (%)                    | 5             |
+| `rolling_resistance`    | Rolling resistance coefficient                   | 0.015         |
 
 ---
 
-## **⚠️ Önemli Notlar**
+## **📤 Output Parameters**
 
-- Parametreleri gerçekçi değerlerle doldurun, aksi takdirde simülasyon mantıksız sonuçlar verebilir.
-- Simülasyon sırasında batarya tamamen boşalırsa veya motor/batarya sıcaklığı aşırı yükselirse simülasyon durdurulacaktır.
-- Yol segmentlerini değiştirerek farklı koşulları test edebilirsiniz.
+| Output Parameter        | Description                                      |
+|-------------------------|--------------------------------------------------|
+| `time`                  | Simulation time (s)                              |
+| `velocity`              | Speed (km/h)                                     |
+| `position`              | Distance covered (m)                             |
+| `soc`                   | Battery state of charge (%)                      |
+| `power`                 | Motor power (kW)                                 |
+| `torque`                | Torque (Nm)                                      |
+| `battery_temp`          | Battery temperature (°C)                         |
+| `motor_temp`            | Motor temperature (°C)                           |
+
+---
+
+## **⚠️ Important Notes**
+
+- Ensure that the parameters are filled with realistic values, otherwise the simulation may produce nonsensical results.
+- If the battery is completely discharged or the motor/battery temperature rises excessively during the simulation, the simulation will stop.
+- You can test different conditions by modifying the road segments.
